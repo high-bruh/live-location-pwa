@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Location Sharer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Live Location Sharer</h1>
+    </header>
+    <main>
+        <div id="controls">
+            <button id="toggleBtn">Start Sharing</button>
+        </div>
+        <div id="status">
+            <p>Status: <span id="statusText">Stopped</span></p>
+        </div>
+        <div id="data">
+            <p>Latitude: <span id="lat">-</span></p>
+            <p>Longitude: <span id="lng">-</span></p>
+            <p>Accuracy: <span id="acc">-</span> meters</p>
+            <p>Last Updated: <span id="timestamp">-</span></p>
+        </div>
+        <div id="log"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
